@@ -1,5 +1,4 @@
 plugins {
-    id 'com.github.johnrengelman.shadow' version '7.1.2'
     id 'java'
 }
 
@@ -18,14 +17,4 @@ repositories {
 dependencies {
     implementation "org.jetbrains:annotations:$annotationVersion"
     implementation "it.unimi.dsi:fastutil:$fastutilVersion"
-}
-
-jar {
-    manifest {
-        attributes 'Main-Class': 'nl.kiipdevelopment.shaft.Main'
-    }
-}
-
-shadowJar {
-    archiveBaseName.set('pencil')
 }
